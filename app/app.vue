@@ -4,8 +4,7 @@
     <footer>
       <!-- <div class="ta-c sen">Pharmacie Ubuzima</div> -->
       <div class="ta-c sen sm-l bg-foo">
-        ©{{ year }}, Pharmacie Ubuzima <br>
-        Développé par 
+        ©{{ year }},
         <a href="https://nsanzumukiza.netlify.app/" target="_blank"  rel="noopener noreferrer" >
           NSANZUMUKIZA
         </a>Thierry.

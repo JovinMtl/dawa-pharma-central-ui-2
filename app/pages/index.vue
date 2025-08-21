@@ -9,9 +9,9 @@
       <div class="ta-c pge-2-set">
         <h1 class="sen ">
             <span class="color-title">
-                Trouver le médicament disponible dans la 
+                Trouver le médicament disponible dans les 
             </span>
-            <span class="c-b">Pharmacie Ubuzima</span> .
+            <span class="c-b">pharmacies.</span>
         </h1><br>
         
         <form v-on:submit.prevent>
