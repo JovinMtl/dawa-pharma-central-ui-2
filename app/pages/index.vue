@@ -106,9 +106,9 @@ useHead({
       href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap'
     }
   ],
-  title: 'Pharmacie Ubuzima - Recherchez les médicaments disponibles - Kamenge, Bujumbura, Burundi',
+  title: 'Pharma BI - Recherchez le médicament disponible dans les pharmacies - Ntahangwa, Bujumbura, Burundi',
   meta: [
-    { name: 'description', content: 'Trouvez facilement les médicaments en stock à la Pharmacie Ubuzima. #medicament #sante #Kamenge #Bujumbura #Burundi' },
+    { name: 'description', content: 'Trouvez facilement les médicaments en stock à la Pharmacie près de Vous.' },
     { name: 'robots', content: 'index, follow' },
   ]
 })
