@@ -7,7 +7,8 @@
         ©{{ year }},
         <a href="https://nsanzumukiza.netlify.app/" target="_blank"  rel="noopener noreferrer" >
           NSANZUMUKIZA
-        </a>Thierry.
+        </a>Thierry. <br>
+        Me communiquer pour devenir parténaire.
       </div>
     </footer>
   </div>

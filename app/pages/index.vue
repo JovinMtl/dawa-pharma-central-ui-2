@@ -123,8 +123,6 @@ const turnOnDetails = (e:Event)=>{
   theMed.value = imiti.value[index]
   thePharma.value = pharmas.value[theMed.value['owner']]
 
-  // console.log("THe med: " + JSON.stringify(theMed.value))
-  // console.log("ThePharma: " + JSON.stringify(thePharma.value))
   showDetails.value = true;
 }
 // const getSpePage = ()=>{}
@@ -192,8 +190,8 @@ watch(responsePharmas, (value)=>{
 .pge-2-set{
   width: 100%;
   height: 94vh;
-  padding: 5px;
-  /* overflow: auto; */
+  /* padding: 5px; */
+  padding-top: 30px;
   overflow-y: auto;
 }
 .color-title{
