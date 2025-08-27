@@ -190,8 +190,8 @@ watch(responsePharmas, (value)=>{
 .pge-2-set{
   width: 100%;
   height: 94vh;
-  /* padding: 5px; */
-  padding-top: 30px;
+  padding: 5px;
+  padding-top: 10px;
   overflow-y: auto;
 }
 .color-title{
