@@ -7,7 +7,7 @@
         :pharma="thePharma">
       </detailsPharma>
       <div class="ta-c pge-2-set">
-        <h1 class="sen ">
+        <h1 class="sen">
             <div class="hd">
                 Trouver le médicament disponible dans les pharmacies.
             </div>
@@ -16,7 +16,7 @@
         </h1><br>
         
         <form v-on:submit.prevent>
-          <input v-model="queryset.query" class="m-5 p-5 ta-c bdr-5 inp-elm" placeholder="ex: paracetamol, ..." /> 
+          <input v-model="queryset.query" class="m-5 p-5 ta-c bdr-5 inp-elm da" placeholder="ex: paracetamol, ..." /> 
         <span v-show="shortQuery" for="" class="c-r sm-l">Andika indome zitatu</span>
         <br>
           <button type="submit" class="m-" @click="getFirstPage">Rondeza</button>
@@ -196,9 +196,7 @@ watch(responsePharmas, (value)=>{
   overflow-y: auto;
 }
 .color-title{
-    background: linear-gradient(to right, rgb(0, 128, 107),rgb(11, 102, 11));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .c-b{
     color: blue;
@@ -207,14 +205,14 @@ watch(responsePharmas, (value)=>{
   color: transparent;
 }
 .hide-price{
-  /* background: linear-gradient(to right, red, blue); */
   background-color: black;
-  /* background-clip: text;
-  -webkit-text-fill-color: transparent; */
   border-radius: 4px;
   padding-left: 4px;
 }
 .bl-2{
     filter: blur(1px);
+}
+.da{
+  border: 1px dashed black;
 }
 </style>
