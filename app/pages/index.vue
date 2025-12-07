@@ -8,17 +8,18 @@
       </detailsPharma>
       <div class="ta-c pge-2-set">
         <h1 class="sen ">
-            <span class="color-title">
-                Trouver le médicament disponible dans les 
-            </span>
-            <span class="c-b">pharmacies.</span>
+            <div class="hd">
+                Trouver le médicament disponible dans les pharmacies.
+            </div>
+            Baza umuti kuri
+            pharmacie.
         </h1><br>
         
         <form v-on:submit.prevent>
           <input v-model="queryset.query" class="m-5 p-5 ta-c bdr-5 inp-elm" placeholder="ex: paracetamol, ..." /> 
-        <span v-show="shortQuery" for="" class="c-r sm-l">Tapez au moins trois lettres</span>
+        <span v-show="shortQuery" for="" class="c-r sm-l">Andika indome zitatu</span>
         <br>
-          <button type="submit" class="m-" @click="getFirstPage">Rechercher</button>
+          <button type="submit" class="m-" @click="getFirstPage">Rondeza</button>
         </form>
         
         <div class="sen" v-for="(umuti, index) in imiti" :key="index" data-id="index">
@@ -201,6 +202,9 @@ watch(responsePharmas, (value)=>{
 }
 .c-b{
     color: blue;
+}
+.hd{
+  color: transparent;
 }
 .hide-price{
   /* background: linear-gradient(to right, red, blue); */
