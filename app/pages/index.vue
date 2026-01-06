@@ -16,7 +16,10 @@
         </h1><br>
         
         <form v-on:submit.prevent>
-          <input v-model="queryset.query" class="m-5 p-5 ta-c bdr-5 inp-elm da" placeholder="ex: paracetamol, ..." /> 
+          <input v-model="queryset.query" 
+              class="m-5 p-5 ta-c bdr-5 inp-elm da" 
+              placeholder="ex: paracetamol, ..." 
+              aria-label="Tapez le médicament que vous recherchez"/> 
         <span v-show="shortQuery" for="" class="c-r sm-l">Andika indome zitatu</span>
         <br>
           <button type="submit" class="m-" @click="getFirstPage">Rondeza</button>
