@@ -16,10 +16,12 @@
         </h1><br>
         
         <form v-on:submit.prevent>
-          <input v-model="queryset.query" 
+          <input v-model="queryset.query"
+              type="search"
               class="m-5 p-5 ta-c bdr-5 inp-elm da" 
               placeholder="ex: paracetamol, ..." 
-              aria-label="Tapez le médicament que vous recherchez"/> 
+              aria-label="Tapez le médicament que vous recherchez"
+              @focus="removePlaceHolder" @blur="addPlaceHolder"/> 
         <span v-show="shortQuery" for="" class="c-r sm-l">Andika indome zitatu</span>
         <br>
           <button type="submit" class="m-" @click="getFirstPage">Rondeza</button>
@@ -118,6 +120,13 @@ useHead({
 })
 
 // Functions
+
+function addPlaceHolder(e){
+    e.target.placeholder = "ex: paracetamol, ..."
+}
+function removePlaceHolder(e){
+    e.target.placeholder = ""
+}
 const turnOffDetails = ()=>{
   showDetails.value = false;
 }
