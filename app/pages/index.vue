@@ -30,7 +30,7 @@
         <div class="sen" v-for="(umuti, index) in imiti" :key="index" data-id="index">
           <div v-show="umuti.price" class="umuti-ctn" :class="index%2 ? 'bg-g1':'bg-g2'"  :data-id="index"  @click="turnOnDetails">
             <div>💊{{ String(umuti.nom_med).slice(0, 30) }} </div>
-            <div class="c-w">
+            <div class="c-w"  @click="turnOnDetails">
               <span v-if="pharmas[umuti.owner]?.name_pharma == 'PharmacieUbuzima'">
                 {{ useReadableNumber(umuti.price) }} Fbu
               </span> 
@@ -132,8 +132,18 @@ const turnOffDetails = ()=>{
   showDetails.value = false;
 }
 const turnOnDetails = (e:Event)=>{
-  const index = Number(e.target.parentNode.getAttribute('data-id'))
-  console.log("The index is : " + JSON.stringify(index))
+  let base = e.target.parentNode
+  let index = Number(base.getAttribute('data-id'))
+  const haveClass = e.target.getAttribute('class')
+  if (haveClass == null){
+    let newClass = base.getAttribute('class')
+    console.log("The upper element has class: " + newClass)
+    if (newClass == "c-w"){
+      base = base.parentNode
+      index = Number(base.getAttribute('data-id'))
+      console.log("FINALLY The upper element has class: " + newClass)
+    }
+  }
   theMed.value = imiti.value[index]
   thePharma.value = pharmas.value[theMed.value['owner']]
 
