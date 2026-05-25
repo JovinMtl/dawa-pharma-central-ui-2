@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   scripts: {
     registry: {
       googleAnalytics: {
-        id: "G-T7F691RLN4",
+        id: "G-W34X9BCNBK",
       },
     },
   },

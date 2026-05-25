@@ -8,10 +8,12 @@
         <a href="https://nsanzumukiza.netlify.app/" target="_blank"  rel="noopener noreferrer" >
           NSANZUMUKIZA
         </a>Thierry. <br>
+        <b>
         Devenons &nbsp;
         <a href="http://wa.me/+25779071453" target="_blank"  rel="noopener noreferrer" >
           parténaires
         </a>.
+      </b>
       </div>
     </footer>
   </div>
