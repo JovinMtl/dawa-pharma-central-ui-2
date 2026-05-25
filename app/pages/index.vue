@@ -63,6 +63,7 @@
 </template>
 
 <script setup lang="ts">
+import { reactive, ref } from 'vue'
 import { useTellTime } from '~/composables/useTellTime'
 
 const showLoader = ref(false)
@@ -112,9 +113,9 @@ useHead({
       href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap'
     }
   ],
-  title: 'Pharma BI - Recherchez le médicament disponible dans les pharmacies - Ntahangwa, Bujumbura, Burundi',
+  title: 'Pharma BI - Baza umuti kuri pharmacie - Burundi.',
   meta: [
-    { name: 'description', content: 'Trouvez facilement les médicaments en stock à la Pharmacie près de Vous.' },
+    { name: 'description', content: 'Urubuga rugufasha kurondera/kuronka umuti muri pharmacie aho uri hose.' },
     { name: 'robots', content: 'index, follow' },
   ]
 })
